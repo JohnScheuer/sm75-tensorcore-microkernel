@@ -45,6 +45,7 @@ cmake_ninja_workdir = /home/john/gpu-projects/micro-kernel-generator/build/
 build cmake_object_order_depends_target_kernels: phony || .
 
 build CMakeFiles/kernels.dir/kernels/gemm_shared_fp16.cu.o: CUDA_COMPILER__kernels_unscanned_ /home/john/gpu-projects/micro-kernel-generator/kernels/gemm_shared_fp16.cu || cmake_object_order_depends_target_kernels
+  DEFINES = -DBLOCK_M=64 -DBLOCK_N=64 -DILP_DEPTH=2 -DSTAGE_K=32 -DWARPS_PER_BLOCK=4
   DEP_FILE = CMakeFiles/kernels.dir/kernels/gemm_shared_fp16.cu.o.d
   FLAGS = -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]"
   OBJECT_DIR = CMakeFiles/kernels.dir
@@ -54,6 +55,7 @@ build CMakeFiles/kernels.dir/kernels/gemm_shared_fp16.cu.o: CUDA_COMPILER__kerne
   TARGET_SUPPORT_DIR = CMakeFiles/kernels.dir
 
 build CMakeFiles/kernels.dir/kernels/gemm_wmma_fp16.cu.o: CUDA_COMPILER__kernels_unscanned_ /home/john/gpu-projects/micro-kernel-generator/kernels/gemm_wmma_fp16.cu || cmake_object_order_depends_target_kernels
+  DEFINES = -DBLOCK_M=64 -DBLOCK_N=64 -DILP_DEPTH=2 -DSTAGE_K=32 -DWARPS_PER_BLOCK=4
   DEP_FILE = CMakeFiles/kernels.dir/kernels/gemm_wmma_fp16.cu.o.d
   FLAGS = -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]"
   OBJECT_DIR = CMakeFiles/kernels.dir
@@ -90,6 +92,7 @@ build libkernels.a: CUDA_STATIC_LIBRARY_LINKER__kernels_ CMakeFiles/kernels.dir/
 build cmake_object_order_depends_target_benchmark: phony || cmake_object_order_depends_target_kernels
 
 build CMakeFiles/benchmark.dir/benchmarks/benchmark.cu.o: CUDA_COMPILER__benchmark_unscanned_ /home/john/gpu-projects/micro-kernel-generator/benchmarks/benchmark.cu || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBLOCK_M=64 -DBLOCK_N=64 -DILP_DEPTH=2 -DSTAGE_K=32 -DWARPS_PER_BLOCK=4
   DEP_FILE = CMakeFiles/benchmark.dir/benchmarks/benchmark.cu.o.d
   FLAGS = -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]"
   INCLUDES = -isystem /usr/local/cuda/targets/x86_64-linux/include
