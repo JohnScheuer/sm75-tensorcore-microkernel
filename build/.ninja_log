@@ -1,7 +1,0 @@
-# ninja log v7
-1	1197	1782464156471564066	CMakeFiles/kernels.dir/kernels/gemm_shared_fp16.cu.o	ff0786e017845560
-1	1245	1782464156477476266	CMakeFiles/kernels.dir/kernels/gemm_wmma_fp16.cu.o	12bf41b672fea366
-1245	1263	1782464157719219159	libkernels.a	10964a4c285c53f0
-1	2351	1782464156477671966	CMakeFiles/benchmark.dir/benchmarks/benchmark.cu.o	24478095afce7154
-2352	2391	1782464158828285752	CMakeFiles/benchmark.dir/cmake_device_link.o	2df39583b7abbeb3
-2391	2564	1782464158866579352	benchmark	3883b226fc3e668c
