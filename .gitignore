@@ -1,0 +1,7 @@
+build/
+*.o
+*.ptx
+*.cubin
+*.fatbin
+compile_commands.json
+benchmark

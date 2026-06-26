@@ -1,0 +1,16 @@
+# Build
+build/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Binaries
+runtime
+*.out
+
+# Logs
+*.log
